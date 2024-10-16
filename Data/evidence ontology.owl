@@ -1,0 +1,542 @@
+<rdf:RDF
+    xmlns:rss="http://purl.org/rss/1.0/"
+    xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns="http://www.biocyc.org/owl/ontologies/ocelot/evidence/#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <owl:Class rdf:ID="EV-EXP-IMP">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IMP inferred from mutant phenotype.
+The assertion was inferred from a mutant phenotype such as
+    o Any gene mutation/knockout
+    o Overexpression/ectopic expression of wild-type or mutant genes
+    o Anti-sense experiments
+    o RNA interference experiments
+    o Specific protein inhibitors
+    o Complementation	
+
+Comment: Inferences made from examining mutations or
+abnormal levels of only the product(s) of the gene of interest are covered by code EV-IMP
+(compare to code EV-IGI). Use this code for experiments that use antibodies 
+or other specific inhibitors of RNA or protein activity, even though no
+gene may be mutated (the rationale is that EV-IMP is used where an
+abnormal situation prevails in a cell or organism).
+</COMMENT>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP"/>
+    </rdfs:subClassOf>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from mutant phenotype</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Evidence"/>
+    </rdfs:subClassOf>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred by computational analysis</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from computation.  The evidence for an assertion comes from a
+computational analysis.  The assertion itself might have been made
+by a person or by a computer, that is, EV-COMP does not specify whether
+manual interpretation of the computation occurred.
+
+</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IEP-GENE-EXPRESSION-ANALYSIS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP-IEP"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA-Binding-Sites</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene expression analysis</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The expression of the gene is analyzed through a transcriptional fusion (i.e. lacZ), and  a difference in expression levels is observed when the regulatory protein is present  (wild type) vs in its absence.  Note that this evidence does not eliminate the possiblity of an indirect effect of the regulator on the regulated gene.</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Evidence"/>
+    </rdfs:subClassOf>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from experiment.  The evidence for an assertion comes from a
+wet-lab experiment of some type.
+</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from experiment</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-TRANSCRIPT-LEN-DETERMINATION">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transcription-Units</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Length of transcript experimentally determined</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP-IDA"/>
+    </rdfs:subClassOf>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The length of the (transcribed) RNA is experimentally determined.  The length of the mRNA is compared with that of the DNA sequence and by this means the number of genes transcribed are established.</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-AINF-SINGLE-DIRECTON">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Artificial inference of transcription unit based on single-gene directon.  Existence of a single-gene transcription unit 
+for gene G is inferred computationally by the existence of upstream and downstream genes transcribed in the 
+opposite direction of G.</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Automated inference that a single-gene directon is a transcription unit </COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-AINF"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transcription-Units</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-HINF-FN-FROM-SEQ">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA</PERTAINS-TO>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human inference of function from sequence</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A person inferred, or reviewed a computer inference of, gene function based 
+on sequence,  profile, or structural similarity (as computed from sequence) to 
+one or more other sequences.
+</COMMENT>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-HINF"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-BINDING-OF-CELLULAR-EXTRACTS">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >There exists physical evidence of the binding of cellular extracts containing 
+a regulatory protein to its DNA binding site.  This can be either by 
+footprinting or mobility shift assays.</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Binding of cellular extracts</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP-IDA"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA-Binding-Sites</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IEP">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from expression pattern</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IEP inferred from expression pattern.
+The assertion was inferred from a pattern of expression data such as
+    o Transcript levels (e.g. Northerns, microarray data)
+    o Protein levels (e.g. Western blots)
+</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IMP-SITE-MUTATION">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Site mutation</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A cis-mutation in the DNA sequence of the transcription-factor binding site interferes with the operation of the regulatory function. This is considered  strong evidence for the existence and functional role of the DNA binding site.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IMP"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA-Binding-Sites</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-PURIFIED-PROTEIN">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP-IDA"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assay of purified protein</COMMON-NAME>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Protein purified to homogeneity from specific species (or from heterologous expression vector), and activity measured through in vitro assay.</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-AS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Evidence"/>
+    </rdfs:subClassOf>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Author statement.  The evidence for an assertion comes from an author
+statement in a publication, where that publication does not state direct experimental support
+for the assertion.  Ordinarily, this code will not be used directly -- generally one of
+its child codes, EV-TAS or EV-NAS, will be used instead.
+</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Author statement</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-AINF-FN-FROM-SEQ">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Artificial inference of function from sequence.   A computer inferred a gene function based on sequence, 
+profile, or structural similarity (as computed from sequence) to one or more other sequences. </COMMENT>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-AINF"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Automated inference of function from sequence</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-AS-NAS">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Non-traceable author statement</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Non-traceable author statement.  The assertion was made in a publication such as a review, a meeting abstract, 
+or another database without a reference to a publication describing an experiment that supports the assertion.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-AS"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IGI-FUNC-COMPLEMENTATION">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred by functional complementation</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP-IGI"/>
+    </rdfs:subClassOf>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Protein activity inferred by isolating its gene and performing functional complementation of a well characterized heterologous mutant for the protein.</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-HINF-POSITIONAL-IDENTIFICATION">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A person inferred, or reviewed a computer inference of, promoter position relative to the -10 and -35 boxes. </COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human inference of promoter position</COMMON-NAME>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Promoters</PERTAINS-TO>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-HINF"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-IC">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred by curator.  An assertion was inferred by a curator from relevant
+information such as other assertions in a database.
+</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred by curator</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Evidence"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-BINDING-OF-PURIFIED-PROTEINS">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA-Binding-Sites</PERTAINS-TO>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-EXP-IDA"/>
+    </rdfs:subClassOf>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Binding of purified proteins</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IDA inferred from direct assay.
+The assertion was inferred from a direct experimental assay such as
+    o Enzyme assays
+    o In vitro reconstitution (e.g. transcription)
+    o Immunofluorescence
+    o Cell fractionation
+</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-AINF-SIMILAR-TO-CONSENSUS">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA-Binding-Sites</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A DNA sequence similar to previously known consensus sequences is computationally identified.</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Automated inference based on similarity to consensus sequences</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-AINF"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IDA inferred from direct assay.
+The assertion was inferred from a direct experimental assay such as
+    o Enzyme assays
+    o In vitro reconstitution (e.g. transcription)
+    o Immunofluorescence
+    o Cell fractionation
+</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from direct assay</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-PART-PURIFIED-PROTEIN">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assay of partially purified protein</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IDA"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Protein partially purified from specific species (or from
+heterologous expression vector), and activity measured through in vitro
+assay.</COMMENT>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IMP-REACTION-BLOCKED">
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mutant is characterized, and blocking of reaction is demonstrated.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IMP"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reaction blocked in mutant</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-UNPURIFIED-PROTEIN">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assay of unpurified protein</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Direct assay of unpurified protein.  Presence of a protein activity is indicated by an assay.  
+However, the precise identity of  the protein with that activity is not established by 
+this experiment (protein has not been purified).</COMMENT>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IDA"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-RNA-POLYMERASE-FOOTPRINTING">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA polymerase footprinting</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IDA"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Promoters</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The binding of RNA polymerase to a DNA region (the promoter) is shown by footprinting.</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IGI">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from genetic interaction</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IGI inferred from genetic interaction.
+The assertion was inferred from a genetic interaction such as
+    o "Traditional" genetic interactions such as suppressors, synthetic
+      lethals, etc.
+    o Functional complementation
+    o Inference about one gene drawn from the phenotype of a mutation
+      in a different gene
+
+This category includes any combination of alterations in the sequence
+(mutation) or expression of more than one gene/gene product. This
+category can therefore cover any of the IMP experiments that are done
+in a non-wild-type background, although we prefer to use it only when
+all mutations are documented. When redundant copies of a gene must all
+be mutated to see an informative phenotype, use the IGI code. (Yes, 
+this implies some organisms, such as mouse, will have far, far more IGI
+than IMP annotations.)
+
+IMP also covers phenotypic similarity: a phenotype that is informative
+because it is similar to that of another independent phenotype (which
+may have been described earlier or documented more fully) is IMP (not IGI).
+
+We have also decided to use this category for situations where a
+mutation in one gene (gene A) provides information about the function,
+process, or component of another gene (gene B; i.e. annotate gene B
+using IGI).
+</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IPI">
+    <rdfs:subClassOf rdf:resource="#EV-EXP"/>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IPI inferred from physical interaction
+The assertion was inferred from a physical interaction such as
+    o 2-hybrid interactions
+    o Co-purification
+    o Co-immunoprecipitation
+    o Ion/protein binding experiments
+
+This code covers physical interactions between the gene product of
+interest and another molecule (or ion, or complex). For functions such
+as protein binding or nucleic acid binding, a binding assay is
+simultaneously IPI and IDA; IDA is preferred because the assay
+directly detects the binding. For both IPI and IGI, it would be good
+practice to qualify them with the gene/protein/ion. 
+</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred from physical interaction</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-AINF-POSITIONAL-IDENTIFICATION">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Automated inference of promoter position relative to the -10 and -35 boxes.</COMMENT>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Promoters</PERTAINS-TO>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Automated inference of promoter position</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-AINF"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FRAMES">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#COMMON-NAME"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-AS-TAS">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Traceable author statement.  The assertion was made in a publication -- such as a review or 
+in another database -- that itself did not describe an experiment supporting the
+assertion.  The statement referenced another publication that supported the assertion,
+but it is unclear whether that publication described an experiment that supported
+the assertion.  The difference between the codes EV-EXP-TAS and EV-AS-TAS 
+is that the former code is used when it is certain that experimental evidence supports the
+assertion, and the latter code is used when there is a possibility that an experiment was
+not done to support the assertion.
+In general, references to the primary literature are preferred,
+but this code can be used when the original article is difficult to locate.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-AS"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Traceable author statement</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-BOUNDARIES-DEFINED">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Boundaries of transcription experimentally identified</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sites or genes bounding the transcription unit are experimentally identified.  Several possible cases exist, such as defining the boundaries of a transcription unit with an experimentally identified promoter and terminator, or with a promoter and a downstream gene that is transcribed in the opposite direction, or with a terminator and an upstream gene that is transcribed in the opposite direction.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IDA"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transcription-Units</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-AINF">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Artificial inference.  A computer inferred this assertion through one of many possible methods such as 
+sequence similarity, recognized motifs or consensus sequence, etc.  When a person made the inference 
+from computational evidence, use EV-HINF</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred computationally without human oversight</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-COMP"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-HINF-SIMILAR-TO-CONSENSUS">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human inference based on similarity to consensus sequences</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EV-COMP-HINF"/>
+    </rdfs:subClassOf>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A person inferred, or reviewed a computer inference of,  sequence
+function based on similarity to a consensus sequence.  </COMMENT>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA-Binding-Sites</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="Evidence">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Evidence class defines a controlled vocabulary of evidence types.  Each term in the vocabulary 
+defines a type of evidence that pertains to an assertion in this database.  Example assertions include 
+the assertion that a pathway exists, or the assertion that an operon exists.  Example uses of the 
+evidence vocabulary are to record what type of evidence supports the assertion that an operon exists, 
+such as whether the evidence is based on a computational analysis or a wet-lab experiment, and if the 
+latter, what type of wet-lab experiment.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#FRAMES"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-TRANSCRIPTION-INIT-MAPPING">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transcription initiation mapping</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IDA"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Promoters</PERTAINS-TO>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The transcription start site is identified by primer extension.</COMMENT>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IDA-PURIFIED-PROTEIN-MULTSPECIES">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Protein purified from mixed culture or other multispecies environment (such as, infected plant or animal tissue), and activity measured through in vitro assay.</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assay of protein purified from mixed culture</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IDA"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proteins</PERTAINS-TO>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IEP-COREGULATION">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred through co-regulation.  A transcription unit is inferred because a set of 
+adjacent genes that are transcribed in the same direction exhibit similar
+expression patterns under a range of environmental conditions.
+</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IEP"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred through co-regulation</COMMON-NAME>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transcription-Units</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IMP-POLAR-MUTATION">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Polar mutation</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IMP"/>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >If a mutation in a gene or promoter prevents expression of the downstream genes due to a polar effect, the mutated gene is clearly part of the transcription unit.</COMMENT>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transcription-Units</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-IMP-REACTION-ENHANCED">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene is isolated and over-expressed, and increased accumulation of reaction product is observed.</COMMENT>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reaction enhanced in mutant</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-EXP-IMP"/>
+    <PERTAINS-TO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Enzymatic-Reactions</PERTAINS-TO>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-EXP-TAS">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Traceable author statement to experimental support.  The assertion was made in a publication -- such as a review or 
+in another database -- that itself did not describe an experiment supporting the
+assertion.  However, the statement did reference another publication describing an experiment 
+that supports the assertion.  The difference between the codes EV-EXP-TAS and EV-AS-TAS 
+is that the former code is used when it is certain that experimental evidence supports the
+assertion, and the latter code is used when there is a possibility that an experiment was
+not done to support the assertion.
+In general, references to the primary literature are preferred,
+but this code can be used when the original article is difficult to locate.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#EV-EXP"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Traceable author statement to experimental support</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="EV-COMP-HINF">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Inferred by a human based on computational evidence</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#EV-COMP"/>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human inference.  A curator or author inferred this assertion after review of one or more possible types 
+of computational evidence such as sequence similarity, recognized motifs or consensus sequence, etc.  
+When the inference was made by a computer in an automated fashion, use EV-AINF.</COMMENT>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="COMMENT">
+    <rdfs:domain rdf:resource="#Evidence"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="SYNONYMS">
+    <rdfs:domain rdf:resource="#FRAMES"/>
+    <rdfs:comment xml:lang="en">One or more secondary names for an object -- names
+that a scientist might attempt to use to retrieve the object.  
+The Synonyms should include any name a user might use to
+try to retrieve an object.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="COMMON-NAME">
+    <rdfs:comment xml:lang="en">The primary name by which an object is known to
+scientists -- a widely used and familiar name (in some cases
+arbitrary choices must be made).</rdfs:comment>
+    <rdfs:domain rdf:resource="#FRAMES"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="PERTAINS-TO">
+    <rdfs:domain rdf:resource="#Evidence"/>
+    <rdfs:comment xml:lang="en">This slot lists the one or more classes that this evidence code pertains to.  For example, some evidence codes pertain to promoters only.  If no class is listed, we assume the evidence code pertains to all classes of objects.</rdfs:comment>
+  </owl:DatatypeProperty>
+</rdf:RDF>
