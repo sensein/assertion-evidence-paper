@@ -13,5 +13,8 @@ This repository contains the codes and data related to the **Assertion Evidence 
 ## Misc
 -  [Prov-ontology extensions ](https://blogs.ncl.ac.uk/paolomissier/2021/02/07/w3c-prov-some-interesting-extensions-to-the-core-standard/)
 
+## Target Conference
+- [www2025](https://www2025.thewebconf.org/) - Resource Track
+
 ## Contact
 - Tek Raj Chhetri <tekraj@mit.edu>
