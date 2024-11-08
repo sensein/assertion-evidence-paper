@@ -10,6 +10,26 @@ This repository contains the codes and data related to the **Assertion Evidence 
 - **Data:** Contains ontologies related to assertions and evidence. These ontologies provide the necessary modeling to record the assertions and evidence from the various sources, such as scientific publications, experimentation (wet lab).
 - **Code:** Includes Jupyter Notebook code used for analyzing the ontologies.
 
+## List of Ontologies
+| Acronym    | Full Name                                                                     |
+|------------|--------------------------------------------------|
+| ECO      | Evidence and Conclusion Ontology      |
+|SIO|Semanticscience Integrated Ontology|
+|RDO|Reasoning and Discourse Ontology|
+|SEPIO|Scientific Evidence and Provenance Information Ontology|
+|AMO|Argument Model Ontology|
+|ARGO|Arguments Ontology|
+|SWAN|Semantic Web Applications in Neuromedicine Ontology|
+|EXPO|Ontology of scientific experiments|
+|OBI|Ontology for Biomedical Investigations|
+| Nanopublication|Nanopublications template ontology|
+|HOH|Hierarchies of Hypotheses Ontology|
+|||
+|||
+|||
+|||
+|||
+ 
 ## List of re-used ontologies
 ### Assertions/Evidence
 The table below lists ontologies that have been reused by others, such as ECO, which supports the recording of assertions and evidence.
