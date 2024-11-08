@@ -1,4 +1,4 @@
-# Assertion Evidence Paper Resource
+# Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies
 
 **Status:** In preparation
 
@@ -71,7 +71,7 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 | CiTO       | Citation Typing Ontology                         | [https://sparontologies.github.io/cito/current/cito.html](https://sparontologies.github.io/cito/current/cito.html)                                         |
 | SKOS       | Simple Knowledge Organization System             | [https://www.w3.org/2004/02/skos/](https://www.w3.org/2004/02/skos/)                                         |
 | VANN       | Vocabulary Annotation Ontology                   |  [https://vocab.org/vann/](https://vocab.org/vann/)                                        |
-                                         |
+                                       
 
 
 
