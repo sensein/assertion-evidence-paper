@@ -24,9 +24,8 @@ This repository contains the codes and data related to the **Assertion Evidence 
 |OBI|Ontology for Biomedical Investigations|
 | Nanopublication|Nanopublications template ontology|
 |HOH|Hierarchies of Hypotheses Ontology|
-|||
-|||
-|||
+|EVI|Evidence Graph Ontology|
+|RVO | Research Variable Ontology|
 |||
 |||
  
@@ -70,9 +69,8 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 | FOAF       | Friend of a Friend Ontology                      | [http://xmlns.com/foaf/spec/](http://xmlns.com/foaf/spec/)                                         |
 | CiTO       | Citation Typing Ontology                         | [https://sparontologies.github.io/cito/current/cito.html](https://sparontologies.github.io/cito/current/cito.html)                                         |
 | SKOS       | Simple Knowledge Organization System             | [https://www.w3.org/2004/02/skos/](https://www.w3.org/2004/02/skos/)                                         |
-| VANN       | Vocabulary Annotation Ontology                   |  [https://vocab.org/vann/](https://vocab.org/vann/)                                        |
-                                       
-
+| VANN       | Vocabulary Annotation Ontology                   |  [https://vocab.org/vann/](https://vocab.org/vann/)                                        |                                       
+|Taxslim|Subset of NCBITAXON | - |
 
 
 ## Target Conference
