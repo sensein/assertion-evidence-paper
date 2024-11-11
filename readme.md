@@ -77,6 +77,8 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 |PROV-O| Provenance ontology | [https://www.w3.org/TR/prov-o/](https://www.w3.org/TR/prov-o/)|
 |Schema.org|Schema.org |[https://schema.org/](https://schema.org/) |
 |Bioschemas| Bioschemas | [https://bioschemas.org/](https://bioschemas.org/)|
+| FaBiO| FRBR-aligned Bibliographic Ontology| [https://sparontologies.github.io/fabio/current/fabio.html](https://sparontologies.github.io/fabio/current/fabio.html)|
+|DBpedia|DBpedia resoruce|[http://dbpedia.org/resource](http://dbpedia.org/resource)|
 
 
 
