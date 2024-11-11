@@ -71,8 +71,12 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 | SKOS       | Simple Knowledge Organization System             | [https://www.w3.org/2004/02/skos/](https://www.w3.org/2004/02/skos/)                                         |
 | VANN       | Vocabulary Annotation Ontology                   |  [https://vocab.org/vann/](https://vocab.org/vann/)                                        |                                       
 |Taxslim|Subset of NCBITAXON | - |
-|DAML| DARPA Agent Markup Language (DAML+OIL)|https://www.daml.org/|
-|vcard|vCard Ontology - for describing People and Organizations|https://www.w3.org/TR/vcard-rdf/|
+|DAML| DARPA Agent Markup Language (DAML+OIL)|[https://www.daml.org/](https://www.daml.org/)|
+|vcard|vCard Ontology - for describing People and Organizations|[https://www.w3.org/TR/vcard-rdf/](https://www.w3.org/TR/vcard-rdf/)|
+|SWRLA|SWRL Annotations|[http://swrl.stanford.edu/ontologies/3.3/swrla.owl](http://swrl.stanford.edu/ontologies/3.3/swrla.owl)|
+|PROV-O| Provenance ontology | [https://www.w3.org/TR/prov-o/](https://www.w3.org/TR/prov-o/)|
+|Schema.org|Schema.org |[https://schema.org/](https://schema.org/) |
+|Bioschemas| Bioschemas | [https://bioschemas.org/](https://bioschemas.org/)|
 
 
 
