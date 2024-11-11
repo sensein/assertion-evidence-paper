@@ -26,9 +26,14 @@ This repository contains the codes and data related to the **Assertion Evidence 
 |HOH|Hierarchies of Hypotheses Ontology|
 |EVI|Evidence Graph Ontology|
 |RVO | Research Variable Ontology|
-|||
-|||
- 
+|PAV|PAV ontology: provenance, authoring and versioning|
+|OPMW-PROV|The Open Provenance Model for Workflows|
+|PROV-O|The PROV (provenance) Ontology|
+|P-Plan|Ontology for Provenance and Plans|
+| PMLM |Provenance for Machine Learning Models (PMLM) ontology | 
+| NeuroBridge | NeuroBridge ontology| 
+| ProPreO | Proteomics Data and Process Provenance Ontology (ProPreO)| 
+|POEM | Psychometric Ontology of Experiences and Measures| 
 ## List of re-used ontologies
 ### Assertions/Evidence
 The table below lists ontologies that have been reused by others, such as ECO, which supports the recording of assertions and evidence.
@@ -79,9 +84,9 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 |Bioschemas| Bioschemas | [https://bioschemas.org/](https://bioschemas.org/)|
 | FaBiO| FRBR-aligned Bibliographic Ontology| [https://sparontologies.github.io/fabio/current/fabio.html](https://sparontologies.github.io/fabio/current/fabio.html)|
 |DBpedia|DBpedia resoruce|[http://dbpedia.org/resource](http://dbpedia.org/resource)|
-
-
-
+| HADatAC | HADatAC Vocabulary and Ontology Infrastructure (VSTOI)|[https://www.hadatac.org/ontologies](https://www.hadatac.org/ontologies)|
+| SNOMEDCT |SNOMED CT identifiers | [https://browser.ihtsdotools.org/?](https://browser.ihtsdotools.org/?)|
+|OPMO| Open Provenance Model Vocabulary | [https://open-biomed.sourceforge.net/opmv/ns.html](https://open-biomed.sourceforge.net/opmv/ns.html)|
 ## Target Conference
 - [www2025](https://www2025.thewebconf.org/) - Resource Track
 
