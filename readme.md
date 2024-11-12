@@ -29,11 +29,15 @@ This repository contains the codes and data related to the **Assertion Evidence 
 |PAV|PAV ontology: provenance, authoring and versioning|
 |OPMW-PROV|The Open Provenance Model for Workflows|
 |PROV-O|The PROV (provenance) Ontology|
-|P-Plan|Ontology for Provenance and Plans|
+|P-Plan|[Ontology for Provenance and Plans](https://vocab.linkeddata.es/p-plan/index.html)|
 | PMLM |Provenance for Machine Learning Models (PMLM) ontology | 
 | NeuroBridge | NeuroBridge ontology| 
 | ProPreO | Proteomics Data and Process Provenance Ontology (ProPreO)| 
 |POEM | Psychometric Ontology of Experiences and Measures| 
+| PMLM| [PMLM Ontology](https://knowledgecaptureanddiscovery.github.io/pmlm/mlprov/release/0.0.1/index.html)|
+|OPMW (or OPMW-PROV)| [Open Provenance Model for Workflows](https://www.opmw.org/index.html)|
+|HED|[Hierarchical Event Descriptors Ontology](https://github.com/hed-standard/hed-schemas)|
+|REPRODUCE-ME|[REPRODUCE-ME Ontology](https://bioportal.bioontology.org/ontologies/REPRODUCE-ME)|
 ## List of re-used ontologies
 ### Assertions/Evidence
 The table below lists ontologies that have been reused by others, such as ECO, which supports the recording of assertions and evidence.
