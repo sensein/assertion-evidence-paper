@@ -92,6 +92,7 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 | SNOMEDCT |SNOMED CT identifiers | [https://browser.ihtsdotools.org/?](https://browser.ihtsdotools.org/?)|
 |OPMO| Open Provenance Model Vocabulary | [https://open-biomed.sourceforge.net/opmv/ns.html](https://open-biomed.sourceforge.net/opmv/ns.html)|
 |OPMV|Open Provenance Model Vocabulary| [https://open-biomed.sourceforge.net/opmv/opmv-guide.html](https://open-biomed.sourceforge.net/opmv/opmv-guide.html)|
+|PROVCARE| ProvCaRe ontology| [https://provcare.case.edu](https://provcare.case.edu) |
 ## Target Conference
 - [www2025](https://www2025.thewebconf.org/) - Resource Track
 
