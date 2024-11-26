@@ -89,7 +89,7 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 | FaBiO| FRBR-aligned Bibliographic Ontology| [https://sparontologies.github.io/fabio/current/fabio.html](https://sparontologies.github.io/fabio/current/fabio.html)|
 |DBpedia|DBpedia resoruce|[http://dbpedia.org/resource](http://dbpedia.org/resource)|
 | HADatAC | HADatAC Vocabulary and Ontology Infrastructure (VSTOI)|[https://www.hadatac.org/ontologies](https://www.hadatac.org/ontologies)|
-| SNOMEDCT |SNOMED CT identifiers | [https://browser.ihtsdotools.org/?](https://browser.ihtsdotools.org/?)|
+| SNOMEDCT |SNOMED CT clinical terms | [https://bioportal.bioontology.org/ontologies/SNOMEDCT?p=summary](https://bioportal.bioontology.org/ontologies/SNOMEDCT?p=summary)|
 |OPMO| Open Provenance Model Vocabulary | [https://open-biomed.sourceforge.net/opmv/ns.html](https://open-biomed.sourceforge.net/opmv/ns.html)|
 |OPMV|Open Provenance Model Vocabulary| [https://open-biomed.sourceforge.net/opmv/opmv-guide.html](https://open-biomed.sourceforge.net/opmv/opmv-guide.html)|
 |PROVCARE| ProvCaRe ontology| [https://provcare.case.edu](https://provcare.case.edu) |
