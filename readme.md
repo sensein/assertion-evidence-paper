@@ -93,6 +93,25 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 |OPMO| Open Provenance Model Vocabulary | [https://open-biomed.sourceforge.net/opmv/ns.html](https://open-biomed.sourceforge.net/opmv/ns.html)|
 |OPMV|Open Provenance Model Vocabulary| [https://open-biomed.sourceforge.net/opmv/opmv-guide.html](https://open-biomed.sourceforge.net/opmv/opmv-guide.html)|
 |PROVCARE| ProvCaRe ontology| [https://provcare.case.edu](https://provcare.case.edu) |
+
+## Provenance ontolgy
+Provenance of PROV ontology.
+
+```mermaid
+
+flowchart TD
+    NeuroBridge[NeuroBridge
+        667/4] -- extends --> PROV
+    NeuroBridge -- extends --> SNOMEDCT
+    NeuroBridge -- extends --> PROVCARE
+    PAV[PAV
+        2/9] -- extends --> PROV
+    PAV -- extends --> FOAF
+    PAV -- extends --> DC[Dublin Core]
+    HED[HED
+        1358/0] -- extends --> DC
+    HED -- extends --> FOAF
+```
 ## Target Conference
 - [www2025](https://www2025.thewebconf.org/) - Resource Track
 
