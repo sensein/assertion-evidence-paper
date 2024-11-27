@@ -100,16 +100,13 @@ Provenance of PROV ontology.
 ```mermaid
 
 flowchart TD
-    NeuroBridge[NeuroBridge
-        667/4] -- extends --> PROV
+    NeuroBridge[NeuroBridge] -- extends --> PROV
     NeuroBridge -- extends --> SNOMEDCT
     NeuroBridge -- extends --> PROVCARE
-    PAV[PAV
-        2/9] -- extends --> PROV
+    PAV[PAV] -- extends --> PROV
     PAV -- extends --> FOAF
     PAV -- extends --> DC[Dublin Core]
-    HED[HED
-        1358/0] -- extends --> DC
+    HED[HED] -- extends --> DC
     HED -- extends --> FOAF
 ```
 ## Target Conference
