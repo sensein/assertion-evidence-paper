@@ -94,21 +94,45 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 |OPMV|Open Provenance Model Vocabulary| [https://open-biomed.sourceforge.net/opmv/opmv-guide.html](https://open-biomed.sourceforge.net/opmv/opmv-guide.html)|
 |PROVCARE| ProvCaRe ontology| [https://provcare.case.edu](https://provcare.case.edu) |
 
-## Provenance ontolgy
-Provenance of PROV ontology.
+## Assertion/Evidence ontolgy 
+
+```mermaid
+flowchart TD
+    ECO["ECO"] -- extends --> GO["GO"] & OBI["OBI"] & OIO["OIO"] & CHEBI["CHEBI"] & DC["DC"] & SO["SO"] & NCBITAXON["NCBITAXON"] & PR["PR"] & DublinCore["DublinCore"] & IDO["IDO"] & UBERON["UBERON"] & IAO["IAO"] & PATO["PATO"] & BFO["BFO"] & RO["RO"] & COB["COB"] & UO["UO"] & CHMO["CHMO"] & CL["CL"]
+    SIO["SIO"] -- extends --> DublinCore & FOAF["FOAF"] & CiTO["CiTO"]
+    RDO["RDO"] -- extends --> DublinCore
+    SEPIO["SEPIO"] -- extends --> BFO & COB & GO & IAO & OBI & RO & DublinCore & PATO & STATO["STATO"] & PROV-O["PROV-O"] & FOAF
+    AMO["AMO"] -- extends --> CiTO
+    ARGO["ARGO"] -- extends --> IAO & BFO & INFO["INFO"]
+    Nanopublication["Nanopublication"] -- extends --> DublinCore & SKOS["SKOS"] & VANN["VANN"]
+    HOH["HOH"] -- extends --> DublinCore & CCON["CCON"] & NCIThesaurus["NCIThesaurus"] & BFO & ENVO["ENVO"] & IAO & RO & Taxslim["Taxslim"] & EFO["EFO"]
+    EvidenceOntology["EvidenceOntology"] -- extends --> vCard["vCard"] & DublinCore & DAML["DAML"]
+    EVI["EVI"] -- extends --> PROV-O & Schema.org["Schema.org"] & VANN & SWRLA["SWRLA"] & DublinCore & Bioschemas["Bioschemas"]
+    POEM["POEM"] -- extends --> SIO & STATO & ECO & OBI & VSTOI["VSTOI"] & SNOMEDCT["SNOMEDCT"] & SKOS
+    Nanopublication --> n1["Untitled Node"]
+
+```
+## Provenance ontolgy 
 
 ```mermaid
 
 flowchart TD
-    NeuroBridge[NeuroBridge] -- extends --> PROV
-    NeuroBridge -- extends --> SNOMEDCT
-    NeuroBridge -- extends --> PROVCARE
-    PAV[PAV] -- extends --> PROV
-    PAV -- extends --> FOAF
-    PAV -- extends --> DC[Dublin Core]
-    HED[HED] -- extends --> DC
-    HED -- extends --> FOAF
+    ECO["ECO"] -- extends --> GO["GO"] & OBI["OBI"] & OIO["OIO"] & CHEBI["CHEBI"] & DC["DC"] & SO["SO"] & NCBITAXON["NCBITAXON"] & PR["PR"] & DublinCore["DublinCore"] & IDO["IDO"] & UBERON["UBERON"] & IAO["IAO"] & PATO["PATO"] & BFO["BFO"] & RO["RO"] & COB["COB"] & UO["UO"] & CHMO["CHMO"] & CL["CL"]
+    SIO["SIO"] -- extends --> DublinCore & FOAF["FOAF"] & CiTO["CiTO"]
+    RDO["RDO"] -- extends --> DublinCore
+    SEPIO["SEPIO"] -- extends --> BFO & COB & GO & IAO & OBI & RO & DublinCore & PATO & STATO["STATO"] & PROV-O["PROV-O"] & FOAF
+    AMO["AMO"] -- extends --> CiTO
+    ARGO["ARGO"] -- extends --> IAO & BFO & INFO["INFO"]
+    Nanopublication["Nanopublication"] -- extends --> DublinCore & SKOS["SKOS"] & VANN["VANN"]
+    HOH["HOH"] -- extends --> DublinCore & CCON["CCON"] & NCIThesaurus["NCIThesaurus"] & BFO & ENVO["ENVO"] & IAO & RO & Taxslim["Taxslim"] & EFO["EFO"]
+    EvidenceOntology["EvidenceOntology"] -- extends --> vCard["vCard"] & DublinCore & DAML["DAML"]
+    EVI["EVI"] -- extends --> PROV-O & Schema.org["Schema.org"] & VANN & SWRLA["SWRLA"] & DublinCore & Bioschemas["Bioschemas"]
+    POEM["POEM"] -- extends --> SIO & STATO & ECO & OBI & VSTOI["VSTOI"] & SNOMEDCT["SNOMEDCT"] & SKOS
+    Nanopublication --> n1["Untitled Node"]
+
 ```
+
+
 ## Target Conference
 - [www2025](https://www2025.thewebconf.org/) - Resource Track
 
