@@ -95,6 +95,7 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 |PROVCARE| ProvCaRe ontology| [https://provcare.case.edu](https://provcare.case.edu) |
 
 ## Assertion/Evidence ontolgy 
+![Provenance graph](assertion-evidence-graph.svg)
 
 ```mermaid
 flowchart TD
@@ -113,6 +114,7 @@ flowchart TD
 
 ```
 ## Provenance ontolgy 
+![Provenance graph](provenance-graph.svg)
 
 ```mermaid
 
