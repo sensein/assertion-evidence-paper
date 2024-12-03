@@ -102,7 +102,8 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 ![Provenance graph](assertion-evidence-graph.svg)
 
 ```mermaid
-fflowchart TD
+
+flowchart TD
     ECO["ECO"] -- reuses --> GO["GO"] & OBI["OBI"] & OIO["OIO"] & CHEBI["CHEBI"] & DC["DC"] & SO["SO"] & NCBITAXON["NCBITAXON"] & PR["PR"] & DublinCore["DublinCore"] & IDO["IDO"] & UBERON["UBERON"] & IAO["IAO"] & PATO["PATO"] & BFO["BFO"] & RO["RO"] & COB["COB"] & UO["UO"] & CHMO["CHMO"] & CL["CL"]
     SIO["SIO"] -- reuses --> DublinCore & FOAF["FOAF"] & CiTO["CiTO"]
     RDO["RDO"] -- reuses --> DublinCore
