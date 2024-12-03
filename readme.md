@@ -102,19 +102,19 @@ The table below lists ontologies that have been reused by others, such as ECO, w
 ![Provenance graph](assertion-evidence-graph.svg)
 
 ```mermaid
-flowchart TD
-    ECO["ECO"] -- extends --> GO["GO"] & OBI["OBI"] & OIO["OIO"] & CHEBI["CHEBI"] & DC["DC"] & SO["SO"] & NCBITAXON["NCBITAXON"] & PR["PR"] & DublinCore["DublinCore"] & IDO["IDO"] & UBERON["UBERON"] & IAO["IAO"] & PATO["PATO"] & BFO["BFO"] & RO["RO"] & COB["COB"] & UO["UO"] & CHMO["CHMO"] & CL["CL"]
-    SIO["SIO"] -- extends --> DublinCore & FOAF["FOAF"] & CiTO["CiTO"]
-    RDO["RDO"] -- extends --> DublinCore
-    SEPIO["SEPIO"] -- extends --> BFO & COB & GO & IAO & OBI & RO & DublinCore & PATO & STATO["STATO"] & PROV-O["PROV-O"] & FOAF
-    AMO["AMO"] -- extends --> CiTO
-    ARGO["ARGO"] -- extends --> IAO & BFO & INFO["INFO"]
-    Nanopublication["Nanopublication"] -- extends --> DublinCore & SKOS["SKOS"] & VANN["VANN"]
-    HOH["HOH"] -- extends --> DublinCore & CCON["CCON"] & NCIThesaurus["NCIThesaurus"] & BFO & ENVO["ENVO"] & IAO & RO & Taxslim["Taxslim"] & EFO["EFO"]
-    EvidenceOntology["EvidenceOntology"] -- extends --> vCard["vCard"] & DublinCore & DAML["DAML"]
-    EVI["EVI"] -- extends --> PROV-O & Schema.org["Schema.org"] & VANN & SWRLA["SWRLA"] & DublinCore & Bioschemas["Bioschemas"]
-    POEM["POEM"] -- extends --> SIO & STATO & ECO & OBI & VSTOI["VSTOI"] & SNOMEDCT["SNOMEDCT"] & SKOS
-    Nanopublication --> n1["Untitled Node"]
+fflowchart TD
+    ECO["ECO"] -- reuses --> GO["GO"] & OBI["OBI"] & OIO["OIO"] & CHEBI["CHEBI"] & DC["DC"] & SO["SO"] & NCBITAXON["NCBITAXON"] & PR["PR"] & DublinCore["DublinCore"] & IDO["IDO"] & UBERON["UBERON"] & IAO["IAO"] & PATO["PATO"] & BFO["BFO"] & RO["RO"] & COB["COB"] & UO["UO"] & CHMO["CHMO"] & CL["CL"]
+    SIO["SIO"] -- reuses --> DublinCore & FOAF["FOAF"] & CiTO["CiTO"]
+    RDO["RDO"] -- reuses --> DublinCore
+    SEPIO["SEPIO"] -- reuses --> BFO & COB & GO & IAO & OBI & RO & DublinCore & PATO & STATO["STATO"] & PROV-O["PROV-O"] & FOAF
+    AMO["AMO"] -- reuses --> CiTO
+    ARGO["ARGO"] -- reuses --> IAO & BFO & INFO["INFO"]
+    Nanopublication["Nanopublication"] -- reuses --> DublinCore & SKOS["SKOS"] & VANN["VANN"]
+    HOH["HOH"] -- reuses --> DublinCore & CCON["CCON"] & NCIThesaurus["NCIThesaurus"] & BFO & ENVO["ENVO"] & IAO & RO & Taxslim["Taxslim"] & EFO["EFO"]
+    EvidenceOntology["EvidenceOntology"] -- reuses --> vCard["vCard"] & DublinCore & DAML["DAML"]
+    EVI["EVI"] -- reuses --> PROV-O & Schema.org["Schema.org"] & VANN & SWRLA["SWRLA"] & DublinCore & Bioschemas["Bioschemas"]
+    POEM["POEM"] -- reuses --> SIO & STATO & ECO & OBI & VSTOI["VSTOI"] & SNOMEDCT["SNOMEDCT"] & SKOS
+
 
 ```
 ## Provenance ontolgy 
@@ -127,18 +127,16 @@ flowchart TD
 ```mermaid
 
 flowchart TD
-    ECO["ECO"] -- extends --> GO["GO"] & OBI["OBI"] & OIO["OIO"] & CHEBI["CHEBI"] & DC["DC"] & SO["SO"] & NCBITAXON["NCBITAXON"] & PR["PR"] & DublinCore["DublinCore"] & IDO["IDO"] & UBERON["UBERON"] & IAO["IAO"] & PATO["PATO"] & BFO["BFO"] & RO["RO"] & COB["COB"] & UO["UO"] & CHMO["CHMO"] & CL["CL"]
-    SIO["SIO"] -- extends --> DublinCore & FOAF["FOAF"] & CiTO["CiTO"]
-    RDO["RDO"] -- extends --> DublinCore
-    SEPIO["SEPIO"] -- extends --> BFO & COB & GO & IAO & OBI & RO & DublinCore & PATO & STATO["STATO"] & PROV-O["PROV-O"] & FOAF
-    AMO["AMO"] -- extends --> CiTO
-    ARGO["ARGO"] -- extends --> IAO & BFO & INFO["INFO"]
-    Nanopublication["Nanopublication"] -- extends --> DublinCore & SKOS["SKOS"] & VANN["VANN"]
-    HOH["HOH"] -- extends --> DublinCore & CCON["CCON"] & NCIThesaurus["NCIThesaurus"] & BFO & ENVO["ENVO"] & IAO & RO & Taxslim["Taxslim"] & EFO["EFO"]
-    EvidenceOntology["EvidenceOntology"] -- extends --> vCard["vCard"] & DublinCore & DAML["DAML"]
-    EVI["EVI"] -- extends --> PROV-O & Schema.org["Schema.org"] & VANN & SWRLA["SWRLA"] & DublinCore & Bioschemas["Bioschemas"]
-    POEM["POEM"] -- extends --> SIO & STATO & ECO & OBI & VSTOI["VSTOI"] & SNOMEDCT["SNOMEDCT"] & SKOS
-    Nanopublication --> n1["Untitled Node"]
+    RVO["RVO"] -- reuses --> FaBiO["FaBiO"] & DBPedia["DBPedia"] & DublinCore["DublinCore"] & FOAF["FOAF"]
+    PAV["PAV"] -- reuses --> PROV["PROV"] & FOAF & DublinCore
+    OPMW["OPMW"] -- reuses --> P-Plan["P-Plan"] & PROV & OPMO["OPMO"] & FOAF & DublinCore & OPMV["OPMV"]
+    P-Plan -- reuses --> PROV & VANN["VANN"] & DublinCore
+    PMLM["PMLM"] -- reuses --> PROV
+    NeuroBridge["NeuroBridge"] -- reuses --> PROV & PROVCARE["PROVCARE"] & SNOMEDCT["SNOMEDCT"]
+    HED["HED"] -- reuses --> DublinCore & FOAF
+    REPRODUCE-ME["REPRODUCE-ME"] -- reuses --> PROV & P-Plan
+    PROPREO["PROPREO"] -- reuses --> DAML["DAML"] & DublinCore
+
 
 ```
 
