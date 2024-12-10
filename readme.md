@@ -1,10 +1,11 @@
-# Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies
+<img width="1165" alt="image" src="https://github.com/user-attachments/assets/a3149740-7a6c-4473-a2da-12e55d00afd1">
 
-**Status:** In preparation
+
+
 
 ## Overview
 
-This repository contains the codes and data related to the **Assertion Evidence Paper**.
+This repository contains the codes and data (i.e., ontologies) related to the **Assertion Evidence Paper** that has been submitted to [The Web Conference](https://www2025.thewebconf.org/).
 ## Contents
 
 - **Data:** Contains ontologies related to assertions and evidence. These ontologies provide the necessary modeling to record the assertions and evidence from the various sources, such as scientific publications, experimentation (wet lab).
@@ -141,9 +142,9 @@ flowchart TD
 
 ```
 
-
-## Target Conference
-- [www2025](https://www2025.thewebconf.org/) - Resource Track
-
 ## Contact
 - Tek Raj Chhetri <tekraj@mit.edu>
+
+## Acknowledgement 
+[![bican_logo](https://github.com/user-attachments/assets/1530ad77-2929-4778-96fe-3d9628454b81)](https://www.portal.brain-bican.org/)
+
