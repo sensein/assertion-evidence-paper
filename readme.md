@@ -5,7 +5,18 @@
 
 ## Overview
 
-This repository contains the codes and data (i.e., ontologies) related to the **Assertion Evidence Paper** that has been submitted to [The Web Conference](https://www2025.thewebconf.org/).
+This repository hosts the code and data (i.e., ontologies) associated with the paper titled "Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion, and Evidence Ontologies". The paper has been submitted to [The Web Conference](https://www2025.thewebconf.org/).
+
+If you find this resource valuable and use it into your work, please consider citing it using the following reference:
+
+```
+@article{chhetri2025bridging,
+  title={Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion, and Evidence Ontologies},
+  author={Chhetri, Tek Raj and Jarecka, Dorota and Trivedi, Puja and Ghosh, Satrajit and Ray, Patrick and Ng, Lydia and Halchenko, Yaroslav O.}, 
+  year={2025},  
+}
+```
+
 ## Contents
 
 - **Data:** Contains ontologies related to assertions and evidence. These ontologies provide the necessary modeling to record the assertions and evidence from the various sources, such as scientific publications, experimentation (wet lab).
