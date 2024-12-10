@@ -51,7 +51,7 @@ If you find this resource valuable and use it into your work, please consider ci
 |HED|[Hierarchical Event Descriptors Ontology](https://github.com/hed-standard/hed-schemas)|
 |REPRODUCE-ME|[REPRODUCE-ME Ontology](https://bioportal.bioontology.org/ontologies/REPRODUCE-ME)|
 ## List of re-used ontologies
-### Assertions/Evidence
+
 The table below lists ontologies that have been reused by others, such as ECO, which supports the recording of assertions and evidence.
 
 | Acronym    | Full Name                                        | Link                                     |
