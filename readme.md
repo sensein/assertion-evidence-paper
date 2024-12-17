@@ -1,5 +1,4 @@
-<img width="1165" alt="image" src="https://github.com/user-attachments/assets/a3149740-7a6c-4473-a2da-12e55d00afd1">
-
+![image](https://github.com/user-attachments/assets/bbf79c16-114f-41f1-9890-65d22291a05f)
 
 
 
@@ -160,5 +159,5 @@ flowchart TD
 - Tek Raj Chhetri <tekraj@mit.edu>
 
 ## Acknowledgement 
-[![bican_logo](https://github.com/user-attachments/assets/1530ad77-2929-4778-96fe-3d9628454b81)](https://www.portal.brain-bican.org/)
+This work is supported by: 1U24MH130918-01 (BICAN knowledge base), NIH-NIBIB P41 EB019936 (ReproNim) and NIH-NIMH R24 MH117295 (DANDI). 
 
