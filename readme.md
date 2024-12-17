@@ -11,7 +11,7 @@ If you find this resource valuable and use it into your work, please consider ci
 ```
 @article{chhetri2025bridging,
   title={Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion, and Evidence Ontologies},
-  author={Chhetri, Tek Raj and Jarecka, Dorota and Trivedi, Puja and Ghosh, Satrajit and Ray, Patrick and Ng, Lydia and Halchenko, Yaroslav O.}, 
+  author={Chhetri, Tek Raj and Halchenko, Yaroslav O. and Jarecka, Dorota and Trivedi, Puja and Ghosh, Satrajit and Ray, Patrick and Ng, Lydia}, 
   year={2025},  
 }
 ```
