@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository hosts the code and data (i.e., ontologies) associated with the paper titled "Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion, and Evidence Ontologies". The paper has been submitted to [The Web Conference](https://www2025.thewebconf.org/).
+This repository hosts the code and data (i.e., ontologies) associated with the paper titled **"Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion, and Evidence Ontologies"**. The paper has been accepted to [The Web Conference](https://www2025.thewebconf.org/).
 
 If you find this resource valuable and use it into your work, please consider citing it using the following reference:
 
