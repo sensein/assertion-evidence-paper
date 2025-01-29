@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bbf79c16-114f-41f1-9890-65d22291a05f)
+![image](https://github.com/user-attachments/assets/f71a55be-e5eb-4576-bda8-dece74e807e0)
 
 
 
@@ -9,10 +9,26 @@ This repository hosts the code and data (i.e., ontologies) associated with the p
 If you find this resource valuable and use it into your work, please consider citing it using the following reference:
 
 ```
-@article{chhetri2025bridging,
-  title={Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion, and Evidence Ontologies},
-  author={Chhetri, Tek Raj and Halchenko, Yaroslav O. and Jarecka, Dorota and Trivedi, Puja and Ghosh, Satrajit and Ray, Patrick and Ng, Lydia}, 
-  year={2025},  
+@inproceedings{chhetri2025bridging,
+  title = {Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies},
+  author = {
+    Tek Raj Chhetri and
+    Yaroslav O. Halchenko and
+    Dorota Jarecka and
+    Puja Trivedi and
+    Satrajit Ghosh and
+    Patrick Ray and
+    Lydia Ng
+  },
+  booktitle = {Companion Proceedings of the ACM Web Conference 2025 (to appear)},
+  year = {2025},
+  publisher = {ACM},
+  address = {Sydney, NSW, Australia}, 
+  doi = {10.1145/3701716.3715483},
+  isbn = {979-8-4007-1331-6/25/04},
+  conference = {ACM Web Conference 2025},
+  location = {Sydney, NSW, Australia},
+  month = {April 28-May 2}, 
 }
 ```
 
