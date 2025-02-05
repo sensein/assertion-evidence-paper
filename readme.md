@@ -177,3 +177,7 @@ flowchart TD
 ## Acknowledgement 
 This work is supported by: 1U24MH130918-01 (BICAN knowledge base), NIH-NIBIB P41 EB019936 (ReproNim) and NIH-NIMH R24 MH117295 (DANDI). 
 
+## License
+[![CC BY 4.0 License](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)  
+This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/).
+
