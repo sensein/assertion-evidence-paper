@@ -32,6 +32,28 @@ If you find this resource valuable and use it into your work, please consider ci
 }
 ```
 
+## Zenodo
+The contents of this repository have been permanently archived on Zenodo. We encourage you to cite both our publication and dataset to support reproducibility and further research.
+```
+@dataset{chhetri_2025_14879204,
+  author       = {Chhetri, Tek Raj and
+                  Halchenko, Yaroslav and
+                  Jarecka, Dorota and
+                  Trivedi, Puja and
+                  Ghosh, Satrajit and
+                  Ray, Patrick and
+                  Ng, Lydia},
+  title        = {Dataset: Bridging the Scientific Knowledge Gap and
+                   Reproducibility: A Survey of Provenance, Assertion
+                   and Evidence Ontologies
+                  },
+  month        = feb,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.14879204},
+  url          = {https://doi.org/10.5281/zenodo.14879204},
+}
+```
 ## Contents
 
 - **Data:** Contains ontologies related to assertions and evidence. These ontologies provide the necessary modeling to record the assertions and evidence from the various sources, such as scientific publications, experimentation (wet lab).
